@@ -1,0 +1,14 @@
+{
+  "name": "boolean-task-hubspot",
+  "version": "1.0.0",
+  "description": "Clone Hubpost home page.",
+  "main": "index.js",
+  "author": "Steven Rico",
+  "license": "MIT",
+  "scripts": {
+    "start": "browser-sync start -s 'public' -f 'public'"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
