@@ -1,0 +1,114 @@
+:root {
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+
+  --color-light: #fff;
+  --color-dark: #000;
+
+  --measure: 60ch;
+
+  --border-thin: thin;
+  --border-medium: medium;
+  --border-thick: thick;
+
+  --border-none: none;
+  --border-solid: solid;
+  --border-double: double;
+  --border-dotted: dotted;
+  --border-dashed: dashed;
+}
+
+/* rokkitt-regular - latin */
+@font-face {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/rokkitt-v19-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/rokkitt-v19-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Rokkitt";
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.text-align\:center {
+  text-align: center !important;
+}
+
+.text-align\:left {
+  text-align: left !important;
+}
+
+.text-align\:right {
+  text-align: right !important;
+}
+
+.text-align\:justify {
+  text-align: justify !important;
+}
+
+.justify-content\:center {
+  justify-content: center !important;
+}
+
+.justify-content\:flex-start {
+  justify-content: flex-start !important;
+}
+
+.justify-content\:flex-end {
+  justify-content: flex-end !important;
+}
+
+.justify-content\:space-between {
+  justify-content: space-between !important;
+}
+
+.justify-content\:space-evenly {
+  justify-content: space-evenly !important;
+}
+
+.justify-content\:space-around {
+  justify-content: space-around !important;
+}
+
+.align-items\:center {
+  align-items: center !important;
+}
+
+.align-items\:flex-start {
+  align-items: flex-start !important;
+}
+
+.align-items\:flex-end {
+  align-items: flex-end !important;
+}
