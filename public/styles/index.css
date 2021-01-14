@@ -1,0 +1,262 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  padding-top: var(--s1);
+  padding-bottom: var(--s1);
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: var(--color-white);
+}
+
+header ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .logo {
+  font-size: var(--s1);
+  font-weight: 900;
+  color: var(--color-orange);
+}
+
+header li a {
+  color: var(--color-dark);
+}
+
+header li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  height: 115vh;
+  display: flex;
+  align-items: center;
+
+  background-color: #fff3e0;
+  border-bottom: 2px solid #102027;
+}
+
+.hero--content {
+  max-width: 40ch;
+}
+
+.hero--content h1 {
+  font-size: var(--s3);
+  line-height: var(--s3);
+}
+
+.hero--content p {
+  font-size: var(--s0);
+}
+
+.hero--content--cta {
+  max-width: 20ch;
+}
+
+.hero--content--cta p {
+  font-size: var(--s-1);
+  font-weight: 900;
+}
+
+.features {
+  padding-top: var(--s4);
+  padding-bottom: var(--s4);
+
+  background-color: #eceff1;
+}
+
+.features h2 {
+  font-size: var(--s2);
+}
+
+.features--content--cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features--content--cta .cta {
+  margin: 0 var(--s1) var(--s-1);
+}
+
+.features--item {
+  padding: var(--s2);
+  background-color: var(--color-white);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.04), 0 8px 10px rgba(0, 0, 0, 0.06);
+}
+
+.features--item h3 {
+  font-size: var(--s1);
+  text-align: center;
+}
+
+.features--item p {
+  text-align: center;
+}
+
+.features--item h4 {
+  font-size: var(--s1);
+  font-weight: 300;
+}
+
+.features--item:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.09), 0 8px 10px rgba(0, 0, 0, 0.11);
+}
+
+.community {
+  padding-top: var(--s4);
+  padding-bottom: var(--s4);
+
+  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+  color: var(--color-white);
+}
+
+.community--content h2 {
+  font-size: var(--s2);
+  line-height: var(--s2);
+}
+
+.community--item {
+  padding: var(--s2);
+}
+
+.community--item--icon {
+  width: 50px;
+  height: 50px;
+  border: thin solid var(--color-white);
+}
+
+.community--item--stat {
+  text-align: center;
+}
+
+.community--item--stat h2 {
+  font-size: var(--s3);
+  font-weight: 900;
+}
+
+.customers {
+  padding-top: var(--s4);
+  padding-bottom: var(--s4);
+}
+
+.customers--content h2 {
+  font-size: var(--s3);
+}
+
+.customers--content--grid {
+  width: 500px;
+}
+
+.customers--content--item {
+  border: thin solid var(--color-dark);
+}
+
+.main-cta {
+  padding-top: var(--s4);
+  padding-bottom: var(--s4);
+}
+
+.main-cta--content h2 {
+  font-size: var(--s2);
+}
+
+.main-cta--cta p {
+  font-size: var(--s-1);
+  font-weight: 900;
+}
+
+.main-cta--image-wrapper {
+  min-width: 400px;
+  height: 400px;
+  border: thin solid var(--color-dark);
+}
+
+footer {
+  padding-top: var(--s2);
+  padding-bottom: var(--s2);
+  background-color: #29434e;
+  color: var(--color-white);
+}
+
+.sitemap {
+  display: flex;
+}
+
+.sitemap ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sitemap li a {
+  color: #b0bec5;
+}
+
+.sitemap li a:hover {
+  text-decoration: underline;
+}
+
+.sitemap--nav__left {
+  flex-grow: 1;
+}
+
+.sitemap--nav__left ul {
+  display: inline-block;
+  columns: 2;
+  column-gap: var(--s3);
+}
+
+.sitemap--nav__right {
+  display: flex;
+}
+
+.sitemap--nav--column {
+  padding: 0 var(--s1);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links--logo {
+  padding: var(--s0);
+}
+
+.social-links--logo a {
+  text-decoration: underline;
+  color: var(--color-white);
+}
+
+.cta {
+  width: fit-content;
+  padding: var(--s-1) var(--s1);
+  border-radius: 0.25rem;
+}
+
+.cta__primary {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.cta__secondary {
+  border: thin solid var(--color-orange);
+  background-color: var(--color-white);
+  color: var(--color-orange);
+}
+
+.cta a {
+  font-size: 0.875rem;
+  font-weight: 900;
+  color: inherit;
+}
+
+.gutters-wrapper {
+  padding-left: var(--s5);
+  padding-right: var(--s5);
+}

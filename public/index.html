@@ -7,57 +7,69 @@
 
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/tokens.css">
+  <link rel="stylesheet" href="./styles/layouts.css">
+  <link rel="stylesheet" href="./styles/index.css">
   <title>Document</title>
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      Hubspot
-    </div>
-    <nav>
-      <ul>
-        <li><a href="*">Software</a></li>
-        <li><a href="*">Pricing</a></li>
-        <li><a href="*">Resources</a></li>
-        <li><a href="*">About</a></li>
-      </ul>
-    </nav>
-    <div class="header-cta">
-      <a href="*">Get Hubspot free</a>
+  <header class="gutters-wrapper">
+    <div class="cluster" style="--justify-content: space-between; --align-items: center">
+      <div>
+        <div class="logo">
+          HubSpot
+        </div>
+        <nav class="cluster">
+          <ul>
+            <li><a href="*">Software</a></li>
+            <li><a href="*">Pricing</a></li>
+            <li><a href="*">Resources</a></li>
+            <li><a href="*">About</a></li>
+          </ul>
+        </nav>
+        <div class="cta cta__primary">
+          <a href="*">Get HubSpot free</a>
+        </div>
+      </div>
     </div>
   </header>
   <main>
-    <section class="hero">
-      <div class="hero--content">
-        <div class="hero--content--text">
+    <section class="hero gutters-wrapper">
+      <div class="hero--content" style="--justify-content: center;">
+        <div class="stack">
           <h1>There's a better way to grow.</h1>
           <p>
             Marketing, sales, and service software that helps your business grow without compromise. Because “good for
             the business” should also mean “good for the customer.”
           </p>
-          <div class="hero--content--text--cta">
-            <a href="*">Get Hubspot free</a>
+          <div class="hero--content--cta stack">
+            <div class="cta cta__primary text-align:center">
+              <a href="*">Get HubSpot free</a>
+            </div>
             <p>Get started with FREE tools, and upgrade as you grow.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="features">
-      <div class="features--text">
+    <section class="features stack gutters-wrapper">
+      <div class="center stack text-align:center" style="--gutters: var(--s1)">
         <h2>Power alone. Better together.</h2>
         <p>
           HubSpot offers a complete CRM platform with all the tools and integrations you need to grow better — whether
           you want to increase leads, accelerate sales, streamline customer service, or build a powerful website.
           They’re powerful alone, but even better when used together.
         </p>
-        <div class="features--text--cta">
-          <a href="*">Get started free</a>
-          <a href="*">Get a demo free</a>
+        <div class="features--content--cta">
+          <div class="cta cta__secondary text-align:center">
+            <a href="*">Get started free</a>
+          </div>
+          <div class="cta cta__primary text-align:center">
+            <a href="*">Get a demo free</a>
+          </div>
         </div>
       </div>
-      <div class="features--grid">
-        <div class="features--grid--item">
+      <div class="grid" style="--grid-space: var(--s2); --min-width: 400px;">
+        <div class="features--item stack">
           <h3>Marketing Hub</h3>
           <p>
             Marketing software to help you grow traffic, convert more visitors, and run complete inbound marketing
@@ -69,11 +81,11 @@
             <li>Marketing Automation</li>
             <li>Analytics</li>
           </ul>
-          <div class="features--grid--item--cta">
+          <div class="cta cta__primary center">
             <a href="*">Get started</a>
           </div>
         </div>
-        <div class="features--grid--item">
+        <div class="features--item stack">
           <h3>Sales Hub</h3>
           <p>
             Sales CRM software to help you get deeper insights into prospects, automate the tasks you hate, and close
@@ -85,14 +97,46 @@
             <li>Meeting Scheduling</li>
             <li>Quotes</li>
           </ul>
-          <div class="features--grid--item--cta">
+          <div class="cta cta__primary center">
+            <a href="*">Get started</a>
+          </div>
+        </div>
+        <div class="features--item stack">
+          <h3>Service Hub</h3>
+          <p>
+            Customer service software to help you connect with customers, exceed expectations, and turn them into
+            promoters who grow your business.
+          </p>
+          <h4>Popular Features</h4>
+          <ul>
+            <li>Tickets</li>
+            <li>Customer feedback</li>
+            <li>Knowledge base</li>
+          </ul>
+          <div class="cta cta__primary center">
+            <a href="*">Get started</a>
+          </div>
+        </div>
+        <div class="features--item stack">
+          <h3>CMS Hub</h3>
+          <p>
+            Content management software that’s flexible for marketers, powerful for developers, and gives customers a
+            personalized, secure experience.
+          </p>
+          <h4>Popular Features</h4>
+          <ul>
+            <li>Drag-and-drop editor</li>
+            <li>SEO reccomendations</li>
+            <li>Website themes</li>
+          </ul>
+          <div class="cta cta__primary center">
             <a href="*">Get started</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="community">
-      <div class="community--text">
+    <section class="community stack gutters-wrapper">
+      <div class="community--content center stack text-align:center">
         <h2>Learn and grow with award-winning support and a thriving community behind you.
         </h2>
         <p>
@@ -101,52 +145,83 @@
           you.
         </p>
       </div>
-      <div class="community--grid">
-        <div class="community--grid--item">
-          <div class="community--grid--item--icon">
-            Icon
+      <div class="grid" style="--grid-space: 0; --min-width: 250px">
+        <div class="community--item">
+          <div class="community--item--icon center">
+
           </div>
-          <div class="community--grid--item--stat">
+          <div class="community--item--stat center">
             <h2>150+</h2>
             <p>HubSpot user groups</p>
           </div>
         </div>
-        <div class="community--grid--item">
-          <div class="community--grid--item--icon">
-            Icon
+        <div class="community--item">
+          <div class="community--item--icon center">
+
           </div>
-          <div class="community--grid--item--stat">
+          <div class="community--item--stat center">
             <h2>7M+</h2>
             <p>monthly visits</p>
           </div>
         </div>
+        <div class="community--item">
+          <div class="community--item--icon center">
+
+          </div>
+          <div class="community--item--stat center">
+            <h2>305K+</h2>
+            <p>certified professionals</p>
+          </div>
+        </div>
+        <div class="community--item">
+          <div class="community--item--icon center">
+
+          </div>
+          <div class="community--item--stat center">
+            <h2>26K</h2>
+            <p>registered attendees</p>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="customers">
+    <section class="customers with-sidebar sidebar__right gutters-wrapper"
+      style="--space: var(--s0); --min-width: 30%;">
       <div class="customers--content">
-        <div class="customers--content--text">
-          <h2>95000</h2>
-          <p>customers in over 120 countries growing their businesses with HubSpot</p>
+        <div>
+          <h2>95,000</h2>
+          <p>customers in over <strong>120</strong> countries growing their businesses with HubSpot</p>
         </div>
-        <div class="customers--content--logo-grid">
-          <div class="customers--content--logo-grid--item">
-            <img src="*" alt="Company Logo" />
+        <div class="customers--content--grid grid" style="--grid-space: 2px; --min-width: 120px">
+          <div class="customers--content--item">
+            <img src="*" alt="Logo" />
           </div>
-          <div class="customers--content--logo-grid--item">
-            <img src="*" alt="Company Logo" />
+          <div class="customers--content--item">
+            <img src="*" alt="Logo" />
           </div>
-          <div class="customers--content--logo-grid--item">
-            <img src="*" alt="Company Logo" />
+          <div class="customers--content--item">
+            <img src="*" alt="Logo" />
           </div>
-          <div class="customers--content--logo-grid--item">
-            <img src="*" alt="Company Logo" />
+          <div class="customers--content--item">
+            <img src="*" alt="Logo" />
+          </div>
+          <div class="customers--content--item">
+            <img src="*" alt="Logo" />
+          </div>
+          <div class="customers--content--item">
+            <img src="*" alt="Logo" />
+          </div>
+          <div class="customers--content--item">
+            <img src="*" alt="Logo" />
+          </div>
+          <div class="customers--content--item">
+            <img src="*" alt="Logo" />
           </div>
         </div>
       </div>
     </section>
-    <section class="main-cta">
-      <div class="main-cta--content">
-        <div class="main-cta--content--text">
+    <section class="main-cta with-sidebar sidebar__right gutters-wrapper" style="--space: var(--s0); --min-width: 45%;">
+      <div>
+        <div class="stack">
           <h2>
             Start Growing With HubSpot Today
           </h2>
@@ -154,26 +229,83 @@
             With tools to make every part of your process more human and a support team excited to help you, getting
             started with inbound has never been easier.
           </p>
-          <div class="main-cta--content--text--cta">
-            <a href="*">Get Hubspot free</a>
+          <div class="main-cta--cta stack">
+            <div class="cta cta__primary">
+              <a href="*">Get HubSpot free</a>
+            </div>
             <p>Get started with FREE tools, and upgrade as you grow.</p>
           </div>
         </div>
-      </div>
-      <div class="main-cta--image-wrapper">
-        <img src="*" alt="A human being">
+        <div class="main-cta--image-wrapper">
+          <img src="*" alt="A human being">
+        </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="gutters-wrapper">
     <section class="sitemap">
-      <ul>
-        <li>Popular Features</li>
-        <li>Free Tools</li>
-        <li>Company</li>
-        <li>Customers</li>
-        <li>Partners</li>
-      </ul>
+      <div class="sitemap--nav__left">
+        <h3>Popular Features</h3>
+        <ul>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+          <li><a href="*">Feature ABC</a></li>
+        </ul>
+      </div>
+      <div class="sitemap--nav__right">
+        <div class="sitemap--nav--column">
+          <h3>Free Tools</h3>
+          <uL>
+            <li><a href="*">Tool 123</a></li>
+            <li><a href="*">Tool 123</a></li>
+            <li><a href="*">Tool 123</a></li>
+            <li><a href="*">Tool 123</a></li>
+            <li><a href="*">Tool 123</a></li>
+            <li><a href="*">Tool 123</a></li>
+            <li><a href="*">Tool 123</a></li>
+            <li><a href="*">Tool 123</a></li>
+          </uL>
+        </div>
+        <div class="sitemap--nav--column">
+          <h3>Company</h3>
+          <uL>
+            <li><a href="*">About Us</a></li>
+            <li><a href="*">Careers</a></li>
+            <li><a href="*">Management Team</a></li>
+            <li><a href="*">Board of Directors</a></li>
+          </uL>
+        </div>
+        <div class="sitemap--nav--column">
+          <h3>Customers</h3>
+          <uL>
+            <li><a href="*">Customer Support</a></li>
+            <li><a href="*">Join a Local User Group</a></li>
+          </uL>
+          <h3>Partners</h3>
+          <uL>
+            <li><a href="*">Partners Programs</a></li>
+            <li><a href="*">Partners Programs</a></li>
+            <li><a href="*">Partners Programs</a></li>
+            <li><a href="*">Partners Programs</a></li>
+            <li><a href="*">Partners Programs</a></li>
+          </uL>
+        </div>
+      </div>
     </section>
     <section class="social-links">
       <div class="social-links--logo">
