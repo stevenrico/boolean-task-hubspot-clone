@@ -66,6 +66,12 @@ header li a:hover {
   font-weight: 900;
 }
 
+@media only screen and (max-width: 400px) {
+  .hero--content {
+    padding-top: 6rem;
+  }
+}
+
 .features {
   padding-top: var(--s4);
   padding-bottom: var(--s4);
@@ -219,7 +225,14 @@ footer {
 }
 
 .sitemap--nav--column {
-  padding: 0 var(--s1);
+  padding-left: var(--s1);
+  padding-right: var(--s1);
+}
+
+@media only screen and (max-width: 400px) {
+  .sitemap--nav--column {
+    padding-left: 0;
+  }
 }
 
 .social-links {
@@ -263,4 +276,11 @@ footer {
 .gutters-wrapper {
   padding-left: var(--s4);
   padding-right: var(--s4);
+}
+
+@media only screen and (max-width: 400px) {
+  .gutters-wrapper {
+    padding-left: var(--s1);
+    padding-right: var(--s1);
+  }
 }
